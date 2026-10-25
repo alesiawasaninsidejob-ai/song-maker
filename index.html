@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved to Memento</title>
+<meta http-equiv="refresh" content="0; url=../memento/">
+<link rel="canonical" href="https://alesiawasaninsidejob-ai.github.io/memento/">
+<style>body{font:16px/1.5 system-ui,-apple-system,sans-serif;background:#0f1115;color:#e8eaf0;display:grid;place-items:center;min-height:100vh;margin:0}a{color:#7c9cff}</style>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { if (r.scope.indexOf('/song-maker/') !== -1) r.unregister(); }); }).catch(function () {});
+  }
+  if (window.caches) caches.keys().then(function (ks) { ks.forEach(function (k) { if (k.indexOf('song-maker') === 0) caches.delete(k); }); }).catch(function () {});
+  location.replace('../memento/' + location.search + location.hash);
+</script>
+</head>
+<body><p>Song Maker is now <a href="../memento/">Memento</a>.</p></body>
+</html>
